@@ -2,7 +2,9 @@ title: lets00 Blog
 author: lets00
 email: eduardovansilva@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Blog de tecnologia
+  Blog sobre tecnologias de código aberto voltada ao desenvolvimento
+  e administração de sistemas. Dicas, tutoriais, aulas, e o que me der
+  vontade de escrever.
 show_excerpts: true # set to true to show excerpts on the homepage
 #baseurl: /texture
 
@@ -20,6 +22,7 @@ texture:
   showNav: true
   showPicker: false
   disqus_shortname: lets00
+  analytics_id: UA-166275396-1
 
   # generate social links in footer
   social_links:
