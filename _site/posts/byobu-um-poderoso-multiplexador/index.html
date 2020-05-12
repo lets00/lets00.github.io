@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>Byobu - um poderoso multiplexador de janelas</title>
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Byobu - um poderoso multiplexador de janelas | lets00 Blog</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Byobu - um poderoso multiplexador de janelas" />
+<meta name="author" content="lets00" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="O terminal de comandos é um dos programas mais acessados pelos desenvolvedores, quanto pelos administradores para realizar suas atividades cotidianas. Talvez o cenário descrito a seguir seja familiar e cotidiano pra você: você começou a desenvolver uma tela de um sistema e precisou fazer alguma alteração no backend da aplicação. Você abre um novo terminal e começa a alterar o arquivo e relançar o servidor de desenvolvimento. Logo percebe que precisa atualizar o sistema operacional ou instalar uma nova biblioteca. Lá vai mais um terminal que é aberto para atualizar ou instalar. Enquanto o sistema está atualizando, precisa baixar os dados de um servidor git, ao mesmo tempo que acompanha todos os demais processos." />
+<meta property="og:description" content="O terminal de comandos é um dos programas mais acessados pelos desenvolvedores, quanto pelos administradores para realizar suas atividades cotidianas. Talvez o cenário descrito a seguir seja familiar e cotidiano pra você: você começou a desenvolver uma tela de um sistema e precisou fazer alguma alteração no backend da aplicação. Você abre um novo terminal e começa a alterar o arquivo e relançar o servidor de desenvolvimento. Logo percebe que precisa atualizar o sistema operacional ou instalar uma nova biblioteca. Lá vai mais um terminal que é aberto para atualizar ou instalar. Enquanto o sistema está atualizando, precisa baixar os dados de um servidor git, ao mesmo tempo que acompanha todos os demais processos." />
+<link rel="canonical" href="http://localhost:4000/posts/byobu-um-poderoso-multiplexador/" />
+<meta property="og:url" content="http://localhost:4000/posts/byobu-um-poderoso-multiplexador/" />
+<meta property="og:site_name" content="lets00 Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-11T12:04:23-03:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/byobu-um-poderoso-multiplexador/"},"@type":"BlogPosting","url":"http://localhost:4000/posts/byobu-um-poderoso-multiplexador/","author":{"@type":"Person","name":"lets00"},"headline":"Byobu - um poderoso multiplexador de janelas","dateModified":"2020-05-11T12:04:23-03:00","datePublished":"2020-05-11T12:04:23-03:00","description":"O terminal de comandos é um dos programas mais acessados pelos desenvolvedores, quanto pelos administradores para realizar suas atividades cotidianas. Talvez o cenário descrito a seguir seja familiar e cotidiano pra você: você começou a desenvolver uma tela de um sistema e precisou fazer alguma alteração no backend da aplicação. Você abre um novo terminal e começa a alterar o arquivo e relançar o servidor de desenvolvimento. Logo percebe que precisa atualizar o sistema operacional ou instalar uma nova biblioteca. Lá vai mais um terminal que é aberto para atualizar ou instalar. Enquanto o sistema está atualizando, precisa baixar os dados de um servidor git, ao mesmo tempo que acompanha todos os demais processos.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body>
+  <header class="texture-black">
+    <div class="container"><div class="navbar">
+	<ul>
+		<a href="/"><li>Home</li></a>
+		<a href="/about"><li>About</li></a>
+	</ul>
+</div></div><div class="container">
+	<h1>Byobu - um poderoso multiplexador de janelas</h1>
+	<h4 class="post-description"></h4>
+	<div class="post-date" style="margin-top:20px">
+		Published on May 11, 2020
+	</div>
+	<ul class="post-tags"><li>linux</li><li>byobu</li><li>ssh</li><li>tmux</li><li>server</li></ul>
+</div>
+</header>
+  <main>
+    <div class="container">
+      <div class="post-container">
+          <p>O <strong>terminal de comandos</strong> é um dos programas mais acessados pelos desenvolvedores, quanto pelos administradores para realizar suas atividades cotidianas. Talvez o cenário descrito a seguir seja familiar e cotidiano pra você: você começou a desenvolver uma tela de um sistema e precisou fazer alguma alteração no <em>backend</em> da aplicação. Você abre um novo terminal e começa a alterar o arquivo e relançar o servidor de desenvolvimento. Logo percebe que precisa atualizar o sistema operacional ou instalar uma nova biblioteca. Lá vai mais um terminal que é aberto para atualizar ou instalar. Enquanto o sistema está atualizando, precisa baixar os dados de um servidor <em>git</em>, ao mesmo tempo que acompanha todos os demais processos.</p>
+
+<p>Para um administrador de sistemas, lidar com o terminal de comandos é uma atividade ainda mais comum. Diariamente, ele precisa <strong>acessar remotamente</strong> várias máquinas, <strong>executar diversos comandos</strong>, <strong>acompanhar <em>logs</em></strong>, <strong>monitorar atividades</strong>, etc. E por mais que toda informação seja centralizada em algum lugar, um administrador ainda precisa lidar com uma série de terminais abertos.</p>
+
+<p>O <strong>Byobu</strong> é uma ferramenta de código aberto que permite o usuário gerenciar todas as janelas de terminais que possui aberta. Ele permite o usuário realizar atividades como: criar novos terminais e navegar por eles, mudando seu foco sempre que for desejado; manter diversas conexões ssh abertas ao mesmo tempo, sem ser expulso da sessão quando fechar uma janela ou permanecer muito tempo ocioso.</p>
+
+<p>Se você utiliza ferramentas como <strong>Tmux</strong> ou <strong>GNU-Screen</strong> para gerenciar múltiplos terminais, já deve está familiarizado como essas ferramentas podem trazer praticidade no dia a dia do usuário. E se esse for o caso, utilizar o <em>Byobu</em> será muito simples pois, por debaixo dos panos,um processo do <em>Tmux</em> está sendo executado. Poderíamos dizer que o <em>Byobu</em> é um tipo de <em>wrapper</em> do <em>tmux</em> com uma série de facilidades como: integração de mouse na manipulação de diversas janelas, esquemas de cores, etc.</p>
+
+<h2 id="instalação">Instalação</h2>
+
+<p>O <em>Byobu</em> está presente na maioria dos repositórios de pacotes das principais distribuições Linux do mercado. Para instalá-lo, basta executar o seguinte comando:</p>
+
+<ul>
+  <li>Em distribuições baseadas em Debian/Ubuntu:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>byobu
+</code></pre></div>    </div>
+  </li>
+  <li>Em distribuições baseadas em Fedora/Centos:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>dnf <span class="nb">install </span>byobu
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Para executar o <em>Byobu</em>, abra um único terminal e digite o comando:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>byobu
+</code></pre></div></div>
+
+<p><img src="https://i.ibb.co/30Npchy/Captura-de-tela-de-2020-05-11-17-17-33.png" alt="Byobu em execução" />
+Figura 1- Byobu em execução</p>
+
+<p>Pronto. A partir de agora todo terminal que precisarmos executar, será gerenciado nessa janela aberta pelo <em>Byobu</em>. Por padrão, o <em>Byobu</em> apresenta na parte inferior da janela algumas informações do sistema como:</p>
+
+<ul>
+  <li>Sistema operacional</li>
+  <li>Versão do sistema operacional</li>
+  <li>Janelas</li>
+  <li><em>uptime</em> do sistema</li>
+  <li>número de núcleos do processador e velocidade</li>
+  <li>data e hora</li>
+</ul>
+
+<h2 id="esqueleto-de-um-gerenciador-de-janelas">Esqueleto de um gerenciador de janelas</h2>
+
+<p>A arquitetura básica de um multiplexador de janelas consiste em 3 partes básicas: <strong>programa de terminal</strong>, <strong>janela</strong> e o <strong>terminal</strong>.</p>
+
+<p>O programa de terminal é a aplicação que executamos quando queremos abrir um novo terminal em sistemas que possuem uma Interface gráfica (GUI). Por exemplo, no Ubuntu podemos abrir o <strong>gnome-terminal</strong> ou outros como o <strong>tilix</strong>, <strong>tilda</strong>, <strong>terminator</strong>, etc. Esse programa contém uma <strong>janela</strong> e dentro da janela um <strong>terminal</strong>. Programas como o <strong>gnome-terminal</strong>, permitem o usuário criar múltiplas janelas e, em cada janela, um novo terminal é executado. Então pra resumir:</p>
+
+<p>1 programa de terminal → 1 janela → 1 terminal</p>
+
+<p>O <em>Byobu</em> é um multiplexador de janelas. Isso significa que ele é responsável por navegar em diversas janelas e, em cada janela pode existir 1 ou mais terminais, posicionados em diversos lugares da tela. A figura abaixo mostra uma janela aberta com 3 terminais estão em execução.</p>
+
+<p><img src="https://i.ibb.co/0sW9sxH/Captura-de-tela-de-2020-05-11-15-25-36.png" alt="Byobu gerenciando uma janela com 3 terminais" title="Byobu gerenciando uma janela com 3 terminais" />
+Figura 2- Byobu gerenciando uma janela com 3 terminais</p>
+
+<p>Os terminais são os elementos que nos permitem executar comandos. Podemos perceber em qual terminal estamos através das bordas alaranjadas.</p>
+
+<h2 id="criandoapagando-um-terminal">Criando/Apagando um terminal</h2>
+
+<p>Um terminal pode ser criado em duas posições: <strong>horizontalmente</strong> ou <strong>verticalmente</strong>.
+Para criar um terminal <strong>horizontal</strong>, utiliza-se o atalho <strong><em>Shift + F2</em></strong>. A figura abaixo demonstra o novo terminal criado.</p>
+
+<p><img src="https://i.ibb.co/PmkhFnm/byobu-horizontal.png" alt="Novo terminal na horizontal" />
+Figura 3- Novo terminal na horizontal</p>
+
+<p>Para <strong>mover o cursor</strong> para o novo terminal, pressionamos a teclas <strong><em>Shift</em></strong> + as setas direcionais apontando para onde desejamos movimentar o cursor (↑↓← →). No exemplo acima, o novo terminal foi criado horizontalmente para baixo. Então, para colocar o cursor nesse terminal pressionaremos as teclas <strong><em>Shift</em> + ↓</strong> .</p>
+
+<p>Para criar um terminal <strong>vertical</strong>, utiliza-se o atalho <strong><em>Ctrl + F2</em></strong>. A figura abaixo mostra a aparência do novo terminal criado. Para mover o cursor para o novo terminal criado a direita, utiliza-se o atalho <strong><em>Shift</em> + →</strong> .</p>
+
+<p><img src="https://i.ibb.co/5kr90vt/Captura-de-tela-de-2020-05-11-15-23-45.png" alt="Novo terminal na vertical" />
+Figura 4- Novo terminal na vertical</p>
+
+<p>Em alguns casos, precisamos que o <strong>foco de um terminal</strong> específico ocupe 100% do tamanho da janela (<em>Fullscreen</em>). Através do atalho <strong><em>Shift + F11</em></strong>, o foco da janela passa a ser exclusivamente aquele terminal. Note que os demais terminais não foram fechados e podemos observá-los novamente através do atalho <strong><em>Shift + F11</em></strong>.</p>
+
+<p><img src="https://i.ibb.co/By4Jpfg/Captura-de-tela-de-2020-05-11-15-29-04.png" alt="Terminal com foco" />
+Figura 5- Terminal com foco. Observe a letra Z na janela (parte inferior) indicando que existe Zoom aplicado.</p>
+
+<p>Quando um terminal não é mais útil, podemos <strong>fechar</strong> o terminal selecionado através do atalho <strong><em>Ctrl + D</em></strong>.</p>
+
+<h2 id="criandoapagando-uma-janela">Criando/Apagando uma janela</h2>
+
+<p>Até o momento, todos os terminais estão sendo executados na mesma janela. Através de janelas nós podemos navegar entre vários contextos. Em cada janela podemos utilizar um conjunto de terminais específicos para um determinado fim e isso facilita a <strong>organização das atividades</strong> que estão sendo executadas. Para criar uma nova janela, pressione a tecla <strong><em>F2</em></strong>. A nova janela é criada a direita e podemos navegar entre elas utilizando o atalho <strong><em>Alt + (←→)</em></strong>.</p>
+
+<p><img src="https://i.ibb.co/Yyp0wdL/Captura-de-tela-de-2020-05-11-17-17-21.png" alt="Nova janela" />
+Figura 6- Nova janela</p>
+
+<p>Na parte inferior aparece a janela que estamos trabalhando no momento e podemos ver a <strong>quantidade de janelas aberta</strong>. Perceba que as janelas não possuem nomes definidos (apenas um número com a ordem que foram criadas). Para <strong>renomear</strong> uma janela, vá a qualquer terminal da janela e digite o seguinte comando:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>tmux rename-window <span class="nt">-t</span> <span class="s2">"</span><span class="k">${</span><span class="nv">TMUX_PANE</span><span class="k">}</span><span class="s2">"</span> <span class="s2">"Janela X"</span>
+</code></pre></div></div>
+
+<p>E a janela atual terá o nome <em>Janela X</em>, tornando mais fácil identificar o que trata cada janela.</p>
+
+<p><img src="https://i.ibb.co/61gXLtW/Captura-de-tela-de-2020-05-11-17-17-21.png" alt="Janela renomeada" />
+Figura 7- Janela Renomeada</p>
+
+<p>Para <strong>fechar uma janela</strong>, precisamos fechar todos os terminais abertos através do atalho <strong><em>Ctrl + D</em></strong> ou <strong><em>Ctrl + F6</em></strong>.</p>
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>Trabalhar com multiplexadores de janelas poupa bastante tempo, principalmente quando precisamos de vários terminais abertos em sessões remotas ou quando precisamos lidar com muitos terminais executando diferentes tarefas ao mesmo tempo.</p>
+
+<p>Para mais informações, consulte a página manual da ferramenta:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>man byobu
+</code></pre></div></div>
+
+      </div>
+
+        <!-- Configure Disqus --><div id="disqus_thread" style="margin-top:25px"></div>
+        <script>
+          var disqus_config = function () {
+            this.page.url = 'http://localhost:4000/posts/byobu-um-poderoso-multiplexador/';
+            this.page.identifier = 'http://localhost:4000/posts/byobu-um-poderoso-multiplexador/';
+          };
+          (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://lets00.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript></div>
+  </main></body>
+</html>
