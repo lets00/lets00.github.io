@@ -8,6 +8,8 @@ comments: true
 draft: true
 ---
 
+![Byobu gerenciando uma janela com 3 terminais](https://i.ibb.co/0sW9sxH/Captura-de-tela-de-2020-05-11-15-25-36.png "Byobu gerenciando uma janela com 3 terminais")
+
 O **terminal de comandos** é um dos programas mais acessados pelos desenvolvedores, quanto pelos administradores para realizar suas atividades cotidianas. Talvez o cenário descrito a seguir seja familiar e cotidiano pra você: você começou a desenvolver uma tela de um sistema e precisou fazer alguma alteração no *backend* da aplicação. Você abre um novo terminal e começa a alterar o arquivo e relançar o servidor de desenvolvimento. Logo percebe que precisa atualizar o sistema operacional ou instalar uma nova biblioteca. Lá vai mais um terminal que é aberto para atualizar ou instalar. Enquanto o sistema está atualizando, precisa baixar os dados de um servidor *git*, ao mesmo tempo que acompanha todos os demais processos.
 
 Para um administrador de sistemas, lidar com o terminal de comandos é uma atividade ainda mais comum. Diariamente, ele precisa **acessar remotamente** várias máquinas, **executar diversos comandos**, **acompanhar _logs_**, **monitorar atividades**, etc. E por mais que toda informação seja centralizada em algum lugar, um administrador ainda precisa lidar com uma série de terminais abertos.
