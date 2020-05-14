@@ -9,6 +9,15 @@
 			{%- include nav.html -%}
 		</div>
 		{%- include page_header.html -%}	
+		
+		<nav class="categories">
+			<ul>
+			{% for cat in site.categories %}
+				<a href="/categories/{{cat | first}}"><li>{{ cat | first  }} </li></a>
+			{% endfor %}
+			</ul>				
+			</div>
+		</nav>		
 	</header>
 	<main>
 		<div class="container">
