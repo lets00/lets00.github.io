@@ -1,7 +1,10 @@
 title: lets00 Blog
-author: lets00
+tagline: Blog de tecnologia
+author: Luís Eduardo
+url: lets00.github.io
 email: eduardovansilva@gmail.com
-description: > # this means to ignore newlines until "show_exerpts:"
+lang: pt_BR
+description: >
   Blog sobre tecnologias de código aberto voltada ao desenvolvimento
   e administração de sistemas. Dicas, tutoriais, aulas, e o que me der
   vontade de escrever.
@@ -30,7 +33,9 @@ texture:
     github:  lets00
     linkedIn: in/lets00dev
     rss: rss
- 
+
+webmaster_verifications:
+  google: 6EtZSrm2n-apHVx5qrJHlSgMA5kHHLfUCeHfGj6PLts
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
