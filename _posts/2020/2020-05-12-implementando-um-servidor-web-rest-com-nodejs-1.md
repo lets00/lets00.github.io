@@ -2,7 +2,7 @@
 layout: post
 title:  "Implementando um servidor Web REST com NodeJS - #01 (Introdução)"
 date:   2020-05-13 12:00:00
-categories: [nodejs]
+categories: [javascript]
 tags: [nodejs, javascript]
 comments: true
 image:

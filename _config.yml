@@ -44,7 +44,15 @@ header_pages:
 # Build settings
 # theme: texture
 
+jekyll-archives:
+  enabled:
+    - categories
+  layout: category
+  permalinks:
+    category: '/category/:name/'
+
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-archives
