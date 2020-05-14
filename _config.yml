@@ -1,7 +1,6 @@
 title: lets00 Blog
 tagline: Blog de tecnologia
 author: Luís Eduardo
-url: lets00.github.io
 email: eduardovansilva@gmail.com
 lang: pt_BR
 description: >
@@ -47,4 +46,4 @@ header_pages:
 
 plugins:
   - jekyll-seo-tag
-#  - jekyll-feed
+  - jekyll-feed
