@@ -2,7 +2,7 @@
 layout: post
 title:  "Byobu - um poderoso multiplexador de janelas"
 date:   2020-05-11 15:04:23
-categories: [linux, byobu, ssh, tmux, server]
+categories: [linux]
 tags: [byobu, ssh, tmux, server]
 comments: true
 image:

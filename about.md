@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Sobre"
-date:   2020-05-11 21:03:36 +0530
+title: "Sobre"
+date: 2020-05-11 21:03:36
 ---
 
 # Sobre

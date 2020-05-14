@@ -2,7 +2,7 @@
 layout: post
 title:  "Gerenciando versões do Node com NVM"
 date:   2020-05-12 12:00:00
-categories: [node, javascript]
+categories: [javascript]
 tags: [node, javascript]
 comments: true
 image:
