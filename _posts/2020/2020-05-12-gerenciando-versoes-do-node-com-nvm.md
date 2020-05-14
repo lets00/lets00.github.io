@@ -5,9 +5,13 @@ date:   2020-05-12 12:00:00
 categories: [node, javascript]
 tags: [node, javascript]
 comments: true
+image:
+  path: https://miro.medium.com/max/1050/0*csTuUtvi1VdLS4le.jpg
+  height: 100
+  width: 100
 ---
 
-![nvm](https://miro.medium.com/max/1050/0*csTuUtvi1VdLS4le.jpg "NVM logo")
+![nvm](https://miro.medium.com/max/1050/0*csTuUtvi1VdLS4le.jpg "NVM logo" loading="lazy")
 
 O **NVM (Node Version Manager)** é um script que permite o usuário instalar um gerenciador de versões do Node, permitindo o usuário trabalhar com múltiplas versões do Node. Isso é bastante útil quando uma aplicação precisa suportar múltiplas versões do Node ou quando queremos desacoplar o Node dos diretórios padrões do sistema (já que o NVM cria uma nova estrutura de diretórios onde as versões são instaladas e atualizadas).
 

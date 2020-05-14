@@ -5,10 +5,13 @@ date:   2020-05-11 15:04:23
 categories: [linux, byobu, ssh, tmux, server]
 tags: [byobu, ssh, tmux, server]
 comments: true
-draft: true
+image:
+  path: https://i.ibb.co/0sW9sxH/Captura-de-tela-de-2020-05-11-15-25-36.png
+  height: 100
+  width: 100
 ---
 
-![Byobu gerenciando uma janela com 3 terminais](https://i.ibb.co/0sW9sxH/Captura-de-tela-de-2020-05-11-15-25-36.png "Byobu gerenciando uma janela com 3 terminais")
+![Byobu](https://i.ibb.co/0sW9sxH/Captura-de-tela-de-2020-05-11-15-25-36.png "Byobu" loading="lazy")
 
 O **terminal de comandos** é um dos programas mais acessados pelos desenvolvedores, quanto pelos administradores para realizar suas atividades cotidianas. Talvez o cenário descrito a seguir seja familiar e cotidiano pra você: você começou a desenvolver uma tela de um sistema e precisou fazer alguma alteração no *backend* da aplicação. Você abre um novo terminal e começa a alterar o arquivo e relançar o servidor de desenvolvimento. Logo percebe que precisa atualizar o sistema operacional ou instalar uma nova biblioteca. Lá vai mais um terminal que é aberto para atualizar ou instalar. Enquanto o sistema está atualizando, precisa baixar os dados de um servidor *git*, ao mesmo tempo que acompanha todos os demais processos.
 
@@ -37,7 +40,7 @@ Para executar o *Byobu*, abra um único terminal e digite o comando:
 $ byobu
 ``` 
 
-![Byobu em execução](https://i.ibb.co/30Npchy/Captura-de-tela-de-2020-05-11-17-17-33.png)
+![Byobu em execução](https://i.ibb.co/30Npchy/Captura-de-tela-de-2020-05-11-17-17-33.png "Byobu em execução" loading="lazy")
 Figura 1- Byobu em execução
 
 Pronto. A partir de agora todo terminal que precisarmos executar, será gerenciado nessa janela aberta pelo *Byobu*. Por padrão, o *Byobu* apresenta na parte inferior da janela algumas informações do sistema como:
@@ -60,7 +63,7 @@ O programa de terminal é a aplicação que executamos quando queremos abrir um 
 
 O *Byobu* é um multiplexador de janelas. Isso significa que ele é responsável por navegar em diversas janelas e, em cada janela pode existir 1 ou mais terminais, posicionados em diversos lugares da tela. A figura abaixo mostra uma janela aberta com 3 terminais estão em execução.
 
-![Byobu gerenciando uma janela com 3 terminais](https://i.ibb.co/0sW9sxH/Captura-de-tela-de-2020-05-11-15-25-36.png "Byobu gerenciando uma janela com 3 terminais")
+![Byobu gerenciando uma janela com 3 terminais](https://i.ibb.co/0sW9sxH/Captura-de-tela-de-2020-05-11-15-25-36.png "Byobu gerenciando uma janela com 3 terminais" loading="lazy")
 Figura 2- Byobu gerenciando uma janela com 3 terminais
 
 Os terminais são os elementos que nos permitem executar comandos. Podemos perceber em qual terminal estamos através das bordas alaranjadas.
@@ -70,19 +73,19 @@ Os terminais são os elementos que nos permitem executar comandos. Podemos perce
 Um terminal pode ser criado em duas posições: **horizontalmente** ou **verticalmente**.
 Para criar um terminal **horizontal**, utiliza-se o atalho **_Shift + F2_**. A figura abaixo demonstra o novo terminal criado.
 
-![Novo terminal na horizontal](https://i.ibb.co/PmkhFnm/byobu-horizontal.png)
+![Novo terminal na horizontal](https://i.ibb.co/PmkhFnm/byobu-horizontal.png "Novo terminal na horizontal" loading="lazy")
 Figura 3- Novo terminal na horizontal
 
 Para **mover o cursor** para o novo terminal, pressionamos a teclas **_Shift_** + as setas direcionais apontando para onde desejamos movimentar o cursor (↑↓← →). No exemplo acima, o novo terminal foi criado horizontalmente para baixo. Então, para colocar o cursor nesse terminal pressionaremos as teclas **_Shift_ + ↓** .
 
 Para criar um terminal **vertical**, utiliza-se o atalho **_Ctrl + F2_**. A figura abaixo mostra a aparência do novo terminal criado. Para mover o cursor para o novo terminal criado a direita, utiliza-se o atalho **_Shift_ + →** .
 
-![Novo terminal na vertical](https://i.ibb.co/5kr90vt/Captura-de-tela-de-2020-05-11-15-23-45.png)
+![Novo terminal na vertical](https://i.ibb.co/5kr90vt/Captura-de-tela-de-2020-05-11-15-23-45.png "Novo terminal na vertical" loading="lazy")
 Figura 4- Novo terminal na vertical
 
 Em alguns casos, precisamos que o **foco de um terminal** específico ocupe 100% do tamanho da janela (_Fullscreen_). Através do atalho **_Shift + F11_**, o foco da janela passa a ser exclusivamente aquele terminal. Note que os demais terminais não foram fechados e podemos observá-los novamente através do atalho **_Shift + F11_**.
 
-![Terminal com foco](https://i.ibb.co/By4Jpfg/Captura-de-tela-de-2020-05-11-15-29-04.png)
+![Terminal com foco](https://i.ibb.co/By4Jpfg/Captura-de-tela-de-2020-05-11-15-29-04.png "Terminal em foco" loading="lazy")
 Figura 5- Terminal com foco. Observe a letra Z na janela (parte inferior) indicando que existe Zoom aplicado.
 
 Quando um terminal não é mais útil, podemos **fechar** o terminal selecionado através do atalho **_Ctrl + D_**.
@@ -91,7 +94,7 @@ Quando um terminal não é mais útil, podemos **fechar** o terminal selecionado
 
 Até o momento, todos os terminais estão sendo executados na mesma janela. Através de janelas nós podemos navegar entre vários contextos. Em cada janela podemos utilizar um conjunto de terminais específicos para um determinado fim e isso facilita a **organização das atividades** que estão sendo executadas. Para criar uma nova janela, pressione a tecla **_F2_**. A nova janela é criada a direita e podemos navegar entre elas utilizando o atalho **_Alt + (←→)_**.
 
-![Nova janela](https://i.ibb.co/Yyp0wdL/Captura-de-tela-de-2020-05-11-17-17-21.png)
+![Nova janela](https://i.ibb.co/Yyp0wdL/Captura-de-tela-de-2020-05-11-17-17-21.png "Nova janela" loading="lazy")
 Figura 6- Nova janela
 
 Na parte inferior aparece a janela que estamos trabalhando no momento e podemos ver a **quantidade de janelas aberta**. Perceba que as janelas não possuem nomes definidos (apenas um número com a ordem que foram criadas). Para **renomear** uma janela, vá a qualquer terminal da janela e digite o seguinte comando:
@@ -102,7 +105,7 @@ $ tmux rename-window -t "${TMUX_PANE}" "Janela X"
 
 E a janela atual terá o nome _Janela X_, tornando mais fácil identificar o que trata cada janela.
 
-![Janela renomeada](https://i.ibb.co/61gXLtW/Captura-de-tela-de-2020-05-11-17-17-21.png)
+![Janela renomeada](https://i.ibb.co/61gXLtW/Captura-de-tela-de-2020-05-11-17-17-21.png "Janela renomeada" loading="lazy")
 Figura 7- Janela Renomeada
 
 Para **fechar uma janela**, precisamos fechar todos os terminais abertos através do atalho **_Ctrl + D_** ou **_Ctrl + F6_**. 

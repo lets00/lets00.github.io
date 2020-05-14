@@ -5,9 +5,13 @@ date:   2020-05-13 12:00:00
 categories: [nodejs]
 tags: [nodejs, javascript]
 comments: true
+image:
+  path: https://cdn-images-1.medium.com/max/1200/1*Jx8EXy-c6XKnIEQgPGpz7Q.jpeg
+  height: 100
+  width: 100
 ---
 
-![Logo do NodeJS](https://cdn-images-1.medium.com/max/1200/1*Jx8EXy-c6XKnIEQgPGpz7Q.jpeg "Logo do NodeJS")
+![Logo do NodeJS](https://cdn-images-1.medium.com/max/1200/1*Jx8EXy-c6XKnIEQgPGpz7Q.jpeg "Logo do NodeJS" loading="lazy")
 
 Esse é o **Artigo 1** de uma série de artigos sobre como implementar um servidor _web_ REST usando o NodeJs. Os demais artigos podem ser acessados através dos links abaixo:
 
@@ -132,7 +136,7 @@ O comando acima vai preparar todo o ambiente que definimos no arquivo YAML. Aces
 
 Abra o navegador de sua preferência e digite na barra de navegação: [http://localhost:8081](http://localhost:8081). O resultado deve ser semelhante ao apresentado abaixo:
 
-![Navegador acessando o mongo-express](/assets/images/2020/implementando-um-servidor-web-rest-com-nodejs-1/mongo-express.png "Navegador acessando o mongo-express")
+![Navegador acessando o mongo-express](/assets/images/2020/implementando-um-servidor-web-rest-com-nodejs-1/mongo-express.png "Navegador acessando o mongo-express" loading="lazy")
 Figura 1 - Acesso ao mongo-express
 
 Podemos ver que existem 3 bases de dados(_admin_, _config_ e _local_). Essas são as bases criadas automaticamente quando instalamos o MongoDB.

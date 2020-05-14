@@ -39,7 +39,7 @@ A maneira que o sistema operacional irá criar e gerenciar namespaces depende pr
 
 A **arquitetura hierárquica** relaciona os recursos em diferentes contextos. Geralmente os recursos dos novos contextos são relacionados com o contexto do sistema já criado. Embora os namespaces sejam isolados entre si, eles podem ser mapeados para que o contexto principal possa, de alguma maneira saber que existem outros contextos em execução. A *Figura 1* demonstra como podem diferentes namespaces podem ser relacionados hierarquicamente.
 
-![Arquitetura hierárquica de namespaces](/assets/images/2020/namespace-o-que-e/arquitetura_namespace.png "Figura 1- Arquitetura hierárquica de namespaces")
+![Arquitetura hierárquica de namespaces](/assets/images/2020/namespace-o-que-e/arquitetura_namespace.png "Figura 1- Arquitetura hierárquica de namespaces" loading="lazy")
 
 Figura 1- Arquitetura hierárquica de namespaces.
 
