@@ -1,29 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-	{%- include head.html -%}
-</head>
-<body>
-	<header class="texture-{{ site.texture.style }}">
-		<div class="container">
-			{%- include nav.html -%}
-		</div>
-		{%- include page_header.html -%}	
-		
-		<nav class="categories">
-			<ul>
-			{% for cat in site.categories %}
-				<a href="/category/{{ cat | first }}"><li>{{ cat | first }} </li></a>
-			{% endfor %}
-			</ul>				
-			</div>
-		</nav>		
-	</header>
-	<main>
-		<div class="container">
-			{{ content }}
-		</div>
-	</main>
-	{%- include footer.html -%}
-</body>
-</html>
+---
+layout: default
+---
+
+
+<section>
+    <div class="section-title">
+        <h2><span>{{ page.title }}</span></h2>
+    </div>
+
+    <div class="article-post">
+    {{content}}
+    </div>
+
+    {% if page.comments == true %}
+
+    <div id="comments" class="row mb-5">
+        <div class="col-md-8">
+            {% include disqus.html %}
+        </div>
+    </div>
+
+    {% endif %}
+</section>

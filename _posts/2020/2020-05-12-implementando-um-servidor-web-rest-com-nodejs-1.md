@@ -1,17 +1,18 @@
 ---
 layout: post
-title:  "Implementando um servidor Web REST com NodeJS - #01 (Introdução)"
-date:   2020-05-13 12:00:00
+title: "Implementando um servidor Web REST com NodeJS - #01 (Introdução)"
+description: "Nesse artigo vamos explorar uma das atividades que é muito recorrente no desenvolvimento de aplicações back-end: A implementação de um servidor web..."
+date: 2020-05-13 12:00:00
 categories: [javascript]
 tags: [nodejs, javascript]
 comments: true
-image:
-  path: https://cdn-images-1.medium.com/max/1200/1*Jx8EXy-c6XKnIEQgPGpz7Q.jpeg
-  height: 100
-  width: 100
+image: https://cdn-images-1.medium.com/max/1200/1*Jx8EXy-c6XKnIEQgPGpz7Q.jpeg
+author: lets00
+featured: true
+hidden: true
+rating: 4.5
+toc: true
 ---
-
-![Logo do NodeJS](https://cdn-images-1.medium.com/max/1200/1*Jx8EXy-c6XKnIEQgPGpz7Q.jpeg "Logo do NodeJS" loading="lazy")
 
 Esse é o **Artigo 1** de uma série de artigos sobre como implementar um servidor _web_ REST usando o NodeJs. Os demais artigos podem ser acessados através dos links abaixo:
 

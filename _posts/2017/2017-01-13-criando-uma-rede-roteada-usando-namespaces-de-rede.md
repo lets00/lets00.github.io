@@ -1,19 +1,15 @@
 ---
 layout: post
 title:  "Criando uma rede roteada usando namespaces de rede"
-date:   2017-01-13 12:00:00
+description: "Alguns conceitos de redes são complexos de explicarem a leigos apenas utilizando os métodos tradicionais de ensino (lousa, livros, etc). Se uma imagem vale mais que mil palavras, uma animação/vídeo vale mais que mil imagens."
+date: 2017-01-13 12:00:00
 categories: [linux]
 tags: [namespaces]
 comments: true
-image:
-  path: /assets/images/2017/criando-uma-rede-roteada-usando-namespaces-de-rede/cenario.jpg
-  height: 100
-  width: 100
+author: lets00
+image: assets/images/2017/criando-uma-rede-roteada-usando-namespaces-de-rede/cenario.jpg
+toc: true
 ---
-
-<img src="/assets/images/2017/criando-uma-rede-roteada-usando-namespaces-de-rede/cenario.jpg" alt="Cenário inicial" text="Cenário inicial" loading="lazy">
-
-## Introdução
 
 Alguns conceitos de redes são complexos de explicarem a leigos apenas utilizando os métodos tradicionais de ensino (lousa, livros, etc). Se uma imagem vale mais que mil palavras, uma animação/vídeo vale mais que mil imagens. Sabendo disso, quando ministra-se alguma disciplina de configuração de redes, nada mais direto e que apresenta melhor absorção do que apresentar algo na prática, como se utiliza no mundo real. E é por isso que muitos optam por utilizarem simuladores e/ou emuladores de rede, com a expectativa de reduzir a diferença entre o mundo teórico e o mundo prático. Para a apresentação de temas mais abstratos essa é com certeza uma boa maneira de aprender. Contudo, simuladores por mais perfeitos que sejam ainda são simuladores, possuem suas peculiaridades, seu grau de imersão com a realidade, suas dificuldades, e muitas vezes podem complicar mais do que ajudar.
 

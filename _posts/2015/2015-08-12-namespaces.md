@@ -1,19 +1,14 @@
 ---
 layout: post
-title:  "Namespaces"
-date:   2015-08-12 12:00:00
+title: Namespaces
+date: 2015-08-12 12:00:00
 categories: [linux]
 tags: [namespaces, container]
 comments: true
-image:
-  path: /assets/images/2020/namespace-o-que-e/arquitetura_namespace.png
-  height: 100
-  width: 100
+image: assets/images/2020/namespace-o-que-e/arquitetura_namespace.png
+author: lets00
+toc: true
 ---
-
-![Namespaces](/assets/images/2020/namespace-o-que-e/arquitetura_namespace.png "Namespaces" loading="lazy")
-
-## Introdução
 
 Antes de começar a discorrer sobre o assunto, gostaria de deixar claro que esse post explicará sobre _namespaces_ de sistema. Mas por quê fiz essa diferenciação? Porque aqueles que programam principalmente em C++ conhecem uma diretiva chamada _namespaces_ que permite o usuário utilizar um escopo diferente em suas variáveis e objetos, evitando assim problemas com nomenclatura idêntica à outros elementos.
 
