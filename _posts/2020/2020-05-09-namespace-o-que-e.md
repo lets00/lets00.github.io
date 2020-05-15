@@ -5,9 +5,11 @@ date:   2020-05-09 15:04:23
 categories: [linux]
 tags: [container, namespace, lxc, cgroups]
 comments: true
+image: assets/images/2020/namespace-o-que-e/arquitetura_namespace.png
+author: lets00
+beforetoc: Artigo escrito em Dezembro de 2017 no Medium.
+toc: true
 ---
-
-*Artigo escrito em Dezembro de 2017 no Medium.*
 
 Muito se fala em containers, e como a maneira de trabalhar com computação mudou. Basta entrar em alguns grupos do Telegram sobre desenvolvimento ou infraestrutura que em pouco tempo, alguém está postando um artigo sobre docker, ou procurando saber algo específico sobre kubernets, etc. O que muita gente não sabe (e isso vem crescendo gradualmente cada vez mais na área de computação, e vou tentar explicar o porquê em uma postagem futura) é como o docker, ou outras tecnologias de containers funcionam internamente no sistema em que estão executando.
 

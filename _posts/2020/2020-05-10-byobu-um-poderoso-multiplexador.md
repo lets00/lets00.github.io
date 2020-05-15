@@ -5,13 +5,10 @@ date:   2020-05-11 15:04:23
 categories: [linux]
 tags: [byobu, ssh, tmux, server]
 comments: true
-image:
-  path: https://i.ibb.co/0sW9sxH/Captura-de-tela-de-2020-05-11-15-25-36.png
-  height: 100
-  width: 100
+image: https://i.ibb.co/0sW9sxH/Captura-de-tela-de-2020-05-11-15-25-36.png
+author: lets00
+toc: true
 ---
-
-![Byobu](https://i.ibb.co/0sW9sxH/Captura-de-tela-de-2020-05-11-15-25-36.png "Byobu" loading="lazy")
 
 O **terminal de comandos** é um dos programas mais acessados pelos desenvolvedores, quanto pelos administradores para realizar suas atividades cotidianas. Talvez o cenário descrito a seguir seja familiar e cotidiano pra você: você começou a desenvolver uma tela de um sistema e precisou fazer alguma alteração no *backend* da aplicação. Você abre um novo terminal e começa a alterar o arquivo e relançar o servidor de desenvolvimento. Logo percebe que precisa atualizar o sistema operacional ou instalar uma nova biblioteca. Lá vai mais um terminal que é aberto para atualizar ou instalar. Enquanto o sistema está atualizando, precisa baixar os dados de um servidor *git*, ao mesmo tempo que acompanha todos os demais processos.
 
