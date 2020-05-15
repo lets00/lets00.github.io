@@ -51,7 +51,7 @@ No nosso caso de uso, optamos utilizar essa abordagem, pois não temos definido 
 
 ## Instalação
 
-Instalaremos a última versão LTS do NodeJS via **NVM** (_Node Version Manager_). Caso não possua o NVM instalado na sua máquina, leia esse [artigo](https://lets00.github.io/posts/gerenciando-versoes-do-node-com-nvm/) para saber como instalá-lo na sua máquina. Para instalar o NodeJS, execute o comando abaixo:
+Instalaremos a última versão LTS do NodeJS via **NVM** (_Node Version Manager_). Caso não possua o NVM instalado na sua máquina, leia esse [artigo](https://lets00.github.io/gerenciando-versoes-do-node-com-nvm/) para saber como instalá-lo na sua máquina. Para instalar o NodeJS, execute o comando abaixo:
 
 ```sh
 $ nvm install --lts 
