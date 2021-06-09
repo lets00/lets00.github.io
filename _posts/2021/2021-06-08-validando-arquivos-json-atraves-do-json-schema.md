@@ -9,7 +9,7 @@ comments: true
 image: https://videohive.img.customer.envatousercontent.com/files/28a8c552-427e-4904-a155-fe2df03ab856/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=22488591411d0f04d1d05bc862551b94
 author: lets00
 featured: true
-hidden: true
+hidden: false
 toc: true
 ---
 
