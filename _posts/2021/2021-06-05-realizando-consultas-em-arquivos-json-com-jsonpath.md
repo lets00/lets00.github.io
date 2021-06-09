@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Realizando consultas em arquivos JSON usando JSONPath"
-description: "Nesse artigo vamos conhecer o novo interpretador javascript (Deno) que vem chamando atenção de várias pessoas da comunidade Javascript"
+description: "Nesse artigo vamos conhecer um pouco mais sobre a linguagem de consulta JSONPath"
 date: 2021-06-05 12:00:00
 categories: [json]
 tags: [json]
