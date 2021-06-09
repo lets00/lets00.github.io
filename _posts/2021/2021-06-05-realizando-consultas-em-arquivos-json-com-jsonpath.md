@@ -8,8 +8,6 @@ tags: [json]
 comments: true
 image: https://cdn.cinepop.com.br/2019/08/friday-the-13th-jason-voorhees-696x391.jpg
 author: lets00
-featured: true
-hidden: false
 toc: true
 ---
 
